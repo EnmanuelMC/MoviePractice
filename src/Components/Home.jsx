@@ -1,11 +1,16 @@
-import React from 'react'
+import  Movies  from './MovieList';
+import MovieCard from './MovieCard';
 
 function Home() {
-    return (
-        <div>
-            Aca se tiene que renderizar las tarjetas de los videojuegos
-        </div>
-    )
+  return (
+    <div className="d-flex ">
+      {
+      Movies.map(({ Title, Poster, link }, index) => (
+          <MovieCard key={index} link={link} title={Title} poster={Poster} />
+      ))
+      }
+    </div>
+  );
 }
 
-export default Home
+export default Home;

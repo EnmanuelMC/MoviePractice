@@ -1,11 +1,19 @@
-import React from 'react'
-
-function MovieCard({cover , name}) {
+function MovieCard({ title, poster, link }) {
     return (
-        <div>
-            Aca deberia ir la portada de la pelicula y su nombre
+      <div>
+        <h2>{title}</h2>
+        <div className="card" style={{ width: '18rem' }}>
+        <img className="card-img-top" src={poster} alt="Card image cap" />
+        <div className="card-body">
+          <h5 className="card-title">{title}</h5>
+          <a href={link} className="btn btn-primary">
+            Descriptions
+          </a>
         </div>
-    )
-}
-
-export default MovieCard
+      </div>
+      </div>
+      
+    );
+  }
+  
+  export default MovieCard;
