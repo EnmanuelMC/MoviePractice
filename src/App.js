@@ -10,7 +10,7 @@ function App() {
       <Route path="/" render={Navbar}></Route>
       <Route exact path="/" render={LandingPage}></Route>
       <Route exact path="/home" render={Home}></Route>
-      <Route exact path="/home/datailmMovie" render={DetailedMovie}></Route>
+      <Route exact path="/home/datailedMovie" render={DetailedMovie}></Route>
       {/* <Route exact path="/home/movies" render={MovieCard}></Route> */}
     </div>
   );

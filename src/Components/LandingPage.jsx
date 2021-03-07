@@ -1,9 +1,8 @@
 import React from 'react'
-import {Link} from "react-router-dom"
 function LandingPage() {
     return (
-        <div>
-           <h1>Bienvenidx, depositame plata</h1>
+        <div style={{backgroundColor: "#0d6efd",color:"white"}}>
+           <h1>Bienvenidx, Clickea home para ver nuestra cartelera.</h1>
         </div>
     )
 }
